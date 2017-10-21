@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        tools:context="com.thanhsang.android.quanlydoibong.MainActivity">
+
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/logo" android:id="@+id/imgLogo"
+            android:scaleType="fitXY"/>
+    <TextView
+            android:text="Chào HLV Trần Thanh Sang!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/txtChao"
+            android:gravity="right"
+            android:textStyle="italic"/>
+    <TextView
+            android:text="Danh sách CLB: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/txtDanhSachDoiBong"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="LOGO"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:layout_height="wrap_content" android:id="@+id/txtLogoLabel"/>
+        <TextView
+                android:text="FOOTBALL CLUB"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="430px"
+                android:gravity="center"
+                android:layout_height="wrap_content" android:id="@+id/txtClubLabel"/>
+        <TextView
+                android:text="SCORE"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txtScoreLabel"/>
+    </LinearLayout>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="320dp" android:id="@+id/lvDanhSachCLB"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#4298f4"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Thông tin liên hệ:"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/txtInfo"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="Phone: 01628956057"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/txtSDT"/>
+            <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" app:srcCompat="@drawable/call" android:id="@+id/ibtnCall"
+            />
+            <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" app:srcCompat="@drawable/sms" android:id="@+id/ibtnSMS"
+            />
+        </LinearLayout>
+        <TextView
+                android:text="Address: K82/103, Nguyen Luong Bang, Hoa Khanh Bac, Lien Chieu, Da Nang."
+                android:textSize="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/txtDiaChi"/>
+        <TextView
+                android:text="Email: thanhsang12t2@gmail.com"
+                android:textSize="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/txtEmail"/>
+    </LinearLayout>
+</LinearLayout>
