@@ -1,6 +1,8 @@
 package com.thanhsang.android.models;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FootballClub implements Serializable {
     private String name;
@@ -77,5 +79,8 @@ public class FootballClub implements Serializable {
         this.draw = draw;
     }
 
-
+    public List<FootballClub> getAlls(){
+        //Dùng phương thức ở đây để tạo dữ liệu giả, không nên gọi ở MainActivity
+        return new ArrayList<>();
+    }
 }

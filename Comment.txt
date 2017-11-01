@@ -1,0 +1,4 @@
+-Ở file main layout, không cần thiết để phần header màu hồng đâu, listview thì nó không đi kèm với header đâu
+-Phần thông tin liên hệ của e bị mất một nửa(máy nexus 4, android 26), em tìm hiểu về RelativeLayout để viết cho tốt hơn nhé
+-Git em mới tạo được nhánh nhưng chưa làm việc với nhánh được. chưa có pull request
+-Điểm: Code 5/5, git 2/5. Tổng 7/10

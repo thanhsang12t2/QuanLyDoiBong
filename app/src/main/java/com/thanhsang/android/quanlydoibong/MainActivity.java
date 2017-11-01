@@ -21,13 +21,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Coding from here
         addControls();
-
         addEvents();
     }
 
     private void addControls() {
         lvFootballClub = (ListView) findViewById(R.id.lvDanhSachCLB);
         listFootballClub = new ArrayList<>();
+
         listFootballClub.add(new FootballClub("Asenal","Anh", R.drawable.arsenal, 4, 3, 2));
         listFootballClub.add(new FootballClub("Chelsea","Anh", R.drawable.chelsea, 5, 3, 2));
         listFootballClub.add(new FootballClub("Brighton","Anh", R.drawable.brighton, 6, 3, 2));
@@ -48,12 +48,11 @@ public class MainActivity extends AppCompatActivity {
         listFootballClub.add(new FootballClub("Watford","Anh", R.drawable.watford, 3, 3, 2));
         listFootballClub.add(new FootballClub("BromwichAlbion","Anh", R.drawable.west_bromwich_albion, 2, 3, 2));
         listFootballClub.add(new FootballClub("West Ham United","Anh", R.drawable.west_ham_united, 4, 3, 2));
+
         footballClubAdapter = new FootballClubAdapter(MainActivity.this, R.layout.item_club, listFootballClub);
         lvFootballClub.setAdapter(footballClubAdapter);
-
     }
 
     private void addEvents() {
-
     }
 }

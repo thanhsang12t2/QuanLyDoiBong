@@ -55,7 +55,8 @@
     </LinearLayout>
     <ListView
             android:layout_width="match_parent"
-            android:layout_height="320dp" android:id="@+id/lvDanhSachCLB"/>
+            android:layout_height="match_parent"
+            android:id="@+id/lvDanhSachCLB"/>
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -79,23 +80,27 @@
             <ImageButton
                     android:layout_marginLeft="5dp"
                     android:layout_width="20dp"
-                    android:layout_height="20dp" app:srcCompat="@drawable/call" android:id="@+id/ibtnCall"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/call" android:id="@+id/ibtnCall"
             />
             <ImageButton
                     android:layout_marginLeft="5dp"
                     android:layout_width="20dp"
-                    android:layout_height="20dp" app:srcCompat="@drawable/sms" android:id="@+id/ibtnSMS"
+                    android:layout_height="20dp"
+                app:srcCompat="@drawable/sms" android:id="@+id/ibtnSMS"
             />
         </LinearLayout>
         <TextView
                 android:text="Address: K82/103, Nguyen Luong Bang, Hoa Khanh Bac, Lien Chieu, Da Nang."
                 android:textSize="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/txtDiaChi"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDiaChi"/>
         <TextView
                 android:text="Email: thanhsang12t2@gmail.com"
                 android:textSize="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/txtEmail"/>
+                android:layout_height="wrap_content"
+            android:id="@+id/txtEmail"/>
     </LinearLayout>
 </LinearLayout>
